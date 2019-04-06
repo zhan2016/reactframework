@@ -11,7 +11,7 @@ class  StepStore {
 	addStep(stepJson)
 	{
 		//获取所属的组
-		console.log(`${JSON.stringify(stepJson)}`);
+		//console.log(`${JSON.stringify(stepJson)}`);
 		let stepObject = new StepModel(this, UUID(), stepJson.position, stepJson.name,stepJson.description,stepJson.phaseownid);
 
 		if(this._steps && this._steps.length>0)

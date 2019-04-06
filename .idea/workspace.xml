@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2f5ce6d-67e9-41cd-ac8a-80b83066ffcd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/View/StructureView/PhaseModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/StructureView/PhaseView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/StructureView/StepModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/StructureView/StepView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/sum.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/phaseview.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/stepview.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/structmainlayout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/PhaseModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/StepModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/PhaseStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/StepStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/StructureStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/StructureView/StructureMainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StructureView/StructureMainLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/StructureView/StepModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StructureView/StepModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/PhaseStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/PhaseStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/StepStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/StepStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/StructureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/StructureStore.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +23,8 @@
       <file leaf-file-name="StepModal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/StructureView/StepModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            <state relative-caret-position="372">
+              <caret line="116" column="23" lean-forward="true" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -47,8 +35,8 @@
       <file leaf-file-name="PhaseModal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/StructureView/PhaseModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="228">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -59,8 +47,8 @@
       <file leaf-file-name="PhaseStore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/state/PhaseStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="14" column="105" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="105" />
+            <state relative-caret-position="260">
+              <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <element signature="n#!!block;n#getPhasesSelect#0;n#PhaseStore#0" />
@@ -73,8 +61,8 @@
       <file leaf-file-name="StructureStore.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/state/StructureStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+            <state relative-caret-position="304">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -86,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/state/StepStore.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
               </folding>
@@ -177,12 +165,12 @@
         <option value="$PROJECT_DIR$/src/View/StructureView/PhaseView.js" />
         <option value="$PROJECT_DIR$/src/View/StructureView/PhaseModal.js" />
         <option value="$PROJECT_DIR$/src/models/PhaseModel.js" />
-        <option value="$PROJECT_DIR$/src/state/PhaseStore.js" />
         <option value="$PROJECT_DIR$/src/css/phaseview.scss" />
         <option value="$PROJECT_DIR$/src/css/stepview.scss" />
         <option value="$PROJECT_DIR$/src/View/StructureView/StepView.js" />
-        <option value="$PROJECT_DIR$/src/state/StepStore.js" />
         <option value="$PROJECT_DIR$/src/View/StructureView/StepModal.js" />
+        <option value="$PROJECT_DIR$/src/state/StepStore.js" />
+        <option value="$PROJECT_DIR$/src/state/PhaseStore.js" />
         <option value="$PROJECT_DIR$/src/state/StructureStore.js" />
       </list>
     </option>
@@ -316,7 +304,7 @@
       <workItem from="1554032596688" duration="2259000" />
       <workItem from="1554169709116" duration="1389000" />
       <workItem from="1554213973389" duration="38154000" />
-      <workItem from="1554344977971" duration="22063000" />
+      <workItem from="1554344977971" duration="30449000" />
     </task>
     <task id="LOCAL-00001" summary="framework">
       <created>1554006553754</created>
@@ -339,11 +327,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554018123095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="structure">
+      <created>1554379417473</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554379417473</updated>
+    </task>
+    <task id="LOCAL-00005" summary="structure">
+      <created>1554379435228</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554379435228</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80836000" />
+    <option name="totallyTimeSpent" value="89222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -398,7 +400,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="framework" />
     <MESSAGE value="build code base" />
-    <option name="LAST_COMMIT_MESSAGE" value="build code base" />
+    <MESSAGE value="structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -735,28 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/StructureView/PhaseModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/state/PhaseStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="105" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <element signature="n#!!block;n#getPhasesSelect#0;n#PhaseStore#0" />
-            <element signature="n#!!block;n#_getPhaseByID#0;n#PhaseStore#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/StructureView/StepView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -769,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/StructureView/StepModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        <state relative-caret-position="372">
+          <caret line="116" column="23" lean-forward="true" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -780,17 +761,39 @@
     <entry file="file://$PROJECT_DIR$/src/state/StepStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/StructureView/PhaseModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state/PhaseStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#!!block;n#getPhasesSelect#0;n#PhaseStore#0" />
+            <element signature="n#!!block;n#_getPhaseByID#0;n#PhaseStore#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/state/StructureStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+        <state relative-caret-position="304">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>

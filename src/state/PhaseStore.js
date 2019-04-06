@@ -42,8 +42,9 @@ class  PhaseStore {
 		console.log(`${JSON.stringify(oldPhase) } ${phase._position}`);
 		if(oldPhase !== -1)
 		{
-			this._phases.splice(phase._position, 0, phase);
 			this._phases.splice(oldPhase,1);
+			this._phases.splice(phase._position, 0, phase);
+
 		}
 	}
 	@action

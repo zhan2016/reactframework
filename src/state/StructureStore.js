@@ -35,21 +35,21 @@ class  StructureStore {
 	_getStartIndexofInitPhase = (phase)=>
 	{
 			let phasestore = this._phasestore;
-			if(phasestore._phases || phasestore._phases.length === 0)
+			if(!phasestore._phases || phasestore._phases.length === 0)
 			{
 				return 0;
 			}
 			else
 			{
 				let index = 0;
-				let phaseindex = phasestore.findIndex(item => item._id === phase._id);
+				let phaseindex = phasestore._phases.findIndex(item => item._id === phase._id);
 				if(phaseindex === -1)
 				{
 					return 0;
 				}
 				for (let i = 0; i < phaseindex; i++)
 				{
-					let phaseName = phasestore[i]._name;
+					let phaseName = phasestore._phases[i]._name;
 					this._stepstore._steps.map(item => {
 						if(item._phaseownid === phaseName)
 						{
@@ -57,7 +57,7 @@ class  StructureStore {
 						}
 					})
 				}
-				return index + 1;
+				return index;
 			}
 	}
 
@@ -78,6 +78,7 @@ class  StructureStore {
 		if(stepindex === -1)
 		{
 			//当前组还没有步骤
+			console.log(`当前还没有步骤:${this._phasestore._currentSelectPhase._name}-最上面 ${this._getStartIndexofInitPhase(this._phasestore._currentSelectPhase)}`)
 			return [{label:`${this._phasestore._currentSelectPhase._name}-最上面`,pos:this._getStartIndexofInitPhase(this._phasestore._currentSelectPhase)}]
 		}
 		else

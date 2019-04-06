@@ -28,10 +28,11 @@ class StepModal extends Component {
 	_submit = (values)=>{
 		let stepstore = this.props.StructStore._stepstore;
 		let initvalue = LO.cloneDeep(stepstore._getStepInitValue);
-		let phaseIndex = this._posList.findIndex(item => item.pos === values.position);
+		let phaseIndex = this._posList.findIndex(item => item.pos.toString() === values.position.toString());
 		if(phaseIndex !== -1)
 		{
 			let lable = this._posList[phaseIndex].label;
+			console.log(`${lable}`);
 			let lables = lable.split('-');
 			values.phaseownid = lables[0];
 		}
@@ -82,7 +83,7 @@ class StepModal extends Component {
 			validationSchema={schema}
 			onSubmit={this._submit}
 			initialValues={{
-				position: initvalue? initvalue._position:0,
+				position: initvalue? initvalue._position:this._posList[0].pos,
 				name: initvalue ? initvalue._name:"",
 				description:initvalue ? initvalue._description:"",
 			}}
