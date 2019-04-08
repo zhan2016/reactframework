@@ -78,14 +78,12 @@ class  StructureStore {
 		if(stepindex === -1)
 		{
 			//当前组还没有步骤
-			console.log(`当前还没有步骤:${this._phasestore._currentSelectPhase._name}-最上面 ${this._getStartIndexofInitPhase(this._phasestore._currentSelectPhase)}`)
+			//console.log(`当前还没有步骤:${this._phasestore._currentSelectPhase._name}-最上面 ${this._getStartIndexofInitPhase(this._phasestore._currentSelectPhase)}`)
 			return [{label:`${this._phasestore._currentSelectPhase._name}-最上面`,pos:this._getStartIndexofInitPhase(this._phasestore._currentSelectPhase)}]
 		}
 		else
 		{
 			let steps = [];
-
-			//console.log(`${this._phasestore._currentSelectPhase._name}`);
 			this._stepstore._steps.map(item => {
 					if (item._phaseownid === this._phasestore._currentSelectPhase._name) {
 						steps.push({label:`${item._phaseownid}-${item._name}之后`,pos:item._position + 1});
@@ -100,7 +98,8 @@ class  StructureStore {
  _getStepsSelectAll()
 	{
 		let steps = this._stepstore._steps;
-		if(!this._phasestore || this._phasestore.length === 0)
+		let phases = this._phasestore._phases;
+		if(!phases || phases.length === 0)
 		{
 			return [];
 		}
@@ -115,6 +114,7 @@ class  StructureStore {
 		})
 		return showselect;
 	}
+	_constructor
 }
 
 export  default  StructureStore;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Nav,NavItem,Tab} from 'react-bootstrap'
-import StructureMainLayout from './StructureView/StructureMainLayout'
+import StructureMainLayout from './StructureView/StructureMainLayout';
+import FormMainLayout from './FormView/FormMainLayout';
 class StudyDetailViewLayout extends  React.Component{
 	render()
 	{
@@ -36,10 +37,10 @@ class StudyDetailViewLayout extends  React.Component{
 				<div className={"studydetailviewContent"}>
 					 <Tab.Content>
 						 <Tab.Pane eventKey="#record">
-							 <StructureMainLayout/>
+							<FormMainLayout />
 						 </Tab.Pane>
 						 <Tab.Pane eventKey="#structure">
-							 结构列表
+							 <StructureMainLayout/>
 						 </Tab.Pane>
 					 </Tab.Content>
 				</div>
