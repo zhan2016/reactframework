@@ -1,50 +1,41 @@
 import React from 'react';
-import {Nav,NavItem,Tab} from 'react-bootstrap'
+import {Nav,NavItem,Tab,Tabs} from 'react-bootstrap'
 import StructureMainLayout from './StructureView/StructureMainLayout';
 import FormMainLayout from './FormView/FormMainLayout';
+import HeaderBar from './HeaderBar';
+import '../css/StudyDetailViewLayout.scss'
 class StudyDetailViewLayout extends  React.Component{
 	render()
 	{
 		return (
 			<React.Fragment>
 				<div>
-					<Tab.Container>
-					<div className={"studydetailviewNavBar"}>
-				<Nav   justify   variant="tabs" defaultActiveKey="#record" activeKey={"record"} onSelect={this._handleSelect}>
-					<NavItem eventKey={1} href="/home">
-						<Nav.Link href={'#record'}>记录</Nav.Link>
-					</NavItem>
-					<NavItem eventKey={2} title="Item">
-						<Nav.Link href={'#structure'}>结构</Nav.Link>
-					</NavItem>
-					<NavItem>
-						<Nav.Link>表单</Nav.Link>
-					</NavItem>
-					<NavItem>
-						<Nav.Link>用户</Nav.Link>
-					</NavItem>
-					<NavItem>
-						<Nav.Link>痕迹</Nav.Link>
-					</NavItem>
-					<NavItem>
-						<Nav.Link>监察</Nav.Link>
-					</NavItem>
-					<NavItem>
-						<Nav.Link>设置</Nav.Link>
-					</NavItem>
-				</Nav>
-					</div>
+					<HeaderBar />
 				<div className={"studydetailviewContent"}>
-					 <Tab.Content>
-						 <Tab.Pane eventKey="#record">
-							<FormMainLayout />
-						 </Tab.Pane>
-						 <Tab.Pane eventKey="#structure">
-							 <StructureMainLayout/>
-						 </Tab.Pane>
-					 </Tab.Content>
+					 <Tabs defaultActiveKey = "record"  justify>
+						 <Tab eventKey={"record"} title = "记录">
+							 <StructureMainLayout />
+						 </Tab>
+						 <Tab eventKey={"structure"} title={"结构"}>
+							 <FormMainLayout />
+						 </Tab>
+						 <Tab eventKey={"form"} title={"表单"}>
+							 <StructureMainLayout />
+						 </Tab>
+						 <Tab eventKey={"activities"} title={"痕迹"}>
+							 <StructureMainLayout />
+						 </Tab>
+						 <Tab eventKey={"query"} title={"监察"}>
+							 <StructureMainLayout />
+						 </Tab>
+						 <Tab eventKey={"user"} title={"用户"}>
+							 <StructureMainLayout />
+						 </Tab>
+						 <Tab eventKey={"setting"} title={"设置"}>
+							 <StructureMainLayout />
+						 </Tab>
+					 </Tabs>
 				</div>
-					</Tab.Container>
 				</div>
 			</React.Fragment>
 		)

@@ -20,9 +20,11 @@ class StepView extends Component {
 		let stepstore =  this.props.StructStore._stepstore;
     return (
       <div>
-				<div class="row">
-				  <h3>步骤{`${this.props.StructStore._phasestore._getCurrentSelectPhase() ? ':' + this.props.StructStore._phasestore._getCurrentSelectPhase()._name:""}`}</h3>
-					<Button variant="outline-primary" onClick={this._stepAdd}>Add</Button>
+				<div class="row" className={"steplefttoolbar"}>
+					<div className={"lefttoolbarcontent"}>
+				  <span>步骤{`${this.props.StructStore._phasestore._getCurrentSelectPhase() ? ':' + this.props.StructStore._phasestore._getCurrentSelectPhase()._name:""}`}</span>
+					<Button variant="outline-primary" onClick={this._stepAdd}>添加</Button>
+					</div>
 				</div>
 				<div>
 					{

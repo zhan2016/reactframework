@@ -16,7 +16,6 @@ class  StructureMainLayout extends  React.Component{
 			<div>
 				<Row>
 					<Col sm={4}>
-
 						<div>
 							<PhaseView />
 						</div>

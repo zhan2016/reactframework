@@ -1,0 +1,73 @@
+.studyviewContainer
+{
+
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle!important;
+  .leftdes
+  {
+    display: table-cell;
+  }
+  .rightbtn
+  {
+    display: table-cell;
+    margin-left: auto;
+    line-height: 100px;
+  }
+  width: 100%;
+}
+.content
+{
+  background: #fff;
+  height: 100%;
+  .searchToolbar
+  {
+    background:#3070CE none !important;
+    min-height: 40px;
+    vertical-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .leftfilter
+    {
+      display: table;
+      padding: 5px;
+      .filterspan
+      {
+        display: table-cell;
+      }
+    }
+    .rightsort
+    {
+      display: table;
+      margin-left: auto;
+      padding: 5px;
+      .rightspan
+      {
+        display: table-cell;
+      }
+    }
+  }
+
+  .listcontainer
+  {
+    display: flex;
+    flex-direction: row;
+    .leftinfo
+    {
+      display: table;
+    }
+    .rightoperator
+    {
+      display: table;
+      margin-left: auto;
+      &:hover
+      {
+        color: tomato;
+      }
+
+    }
+  }
+}

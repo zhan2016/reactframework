@@ -18,3 +18,21 @@
   }
   padding: 10px;
 }
+.steplefttoolbar
+{
+  border:{
+    width: 1px;
+    color: #cccccc;
+    style: solid;
+    radius: 4px;
+  }
+  display: table;
+  width: 100%;
+  .lefttoolbarcontent
+  {
+    display: table-cell;
+    text-align: left;
+    padding: 4px;
+
+  }
+}

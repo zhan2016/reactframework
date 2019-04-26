@@ -25,8 +25,10 @@ class  PhaseView extends  React.Component{
 		return (
 			<div>
 				<div className={"lefttoolbar"}>
-					Phase
-					<Button variant="outline-primary" onClick={this._phaseAdd}>Add</Button>
+					<div className={"lefttoolbarcontent"}>
+					<span>组</span>
+					<Button variant="outline-primary" onClick={this._phaseAdd}>添加</Button>
+					</div>
 				</div>
 				{phaseStore._phases && phaseStore._phases.length > 0 ?(
 					<ListGroup>

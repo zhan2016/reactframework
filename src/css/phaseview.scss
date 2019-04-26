@@ -17,11 +17,20 @@
 .lefttoolbar
 {
   border:{
-    width: 2px;
-    color: #f5f5f5;
+    width: 1px;
+    color: #cccccc;
     style: solid;
+    radius: 4px;
   }
-  display: table-cell;
+  display: table;
+  width: 100%;
+  margin-right: auto;
+  .lefttoolbarcontent
+  {
+    display: table-cell;
+    text-align: left;
+    padding: 4px;
+  }
 }
 .phasename
 {
