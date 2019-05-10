@@ -10,7 +10,9 @@ import createHashHistory from './View/BrowserHistory'
 import {observer, Provider} from 'mobx-react'
 import LoginView from "./View/LoginView";
 import AuthStore from './state/AuthStore';
-import RegisterView from './View/RegisterView'
+import RegisterView from './View/RegisterView';
+import CurrentVariableStore from './state/CurrentVariableStore'
+
 
 //let authstore = new AuthStore();
 //const history = createHashHistory();
@@ -18,7 +20,7 @@ import RegisterView from './View/RegisterView'
 class App extends Component {
   render() {
     return (
-        <Provider AuthStore = {AuthStore}>
+        <Provider AuthStore = {AuthStore}  CurrentVariable = {CurrentVariableStore}>
             <Router  history={createHashHistory}>
               <div className="App">
                         <Container>
@@ -30,6 +32,7 @@ class App extends Component {
                             <Route  path="/studydetail" render={() => (
                                 !AuthStore.isAuth ?  (<Redirect to={"/"}/>):  (<StudyDetailViewLayout />)
                             )}/>
+
                         </Container>
                 </div>
             </Router>

@@ -17,7 +17,6 @@ class StudyModal extends Component {
     @observable countrydic = undefined;
     _submit = (values) =>
     {
-
         console.log(JSON.stringify(values));
         let is_test = values.is_test[0];
         if(is_test === 'test' || values.is_test)

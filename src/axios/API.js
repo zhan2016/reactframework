@@ -59,6 +59,20 @@ export  function del(url, params){
 
 }
 
+export  function patch(url, params){
+	return new Promise((resolve, reject) => {
+		request.patch(url, params)
+			.then(res => {
+				resolve(res.data);
+			})
+			.catch(err =>{
+				reject(err.data)
+			})
+	});
+
+}
+
+
 export function setTokenHeader(token)
 {
     localStorage.setItem('tkoen',token);

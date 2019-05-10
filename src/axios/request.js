@@ -9,16 +9,22 @@ const service = axios.create({
 
 /****** request拦截器==>对请求参数做处理 ******/
 service.interceptors.request.use(config => {
-    console.log(window.CONFIG.serverURL);
-    console.log( '数据加载中……');
-    config.headers['Content-Type'] = 'application/x-www-form-urlencoded'
+//    console.log(window.CONFIG.serverURL);
+    //console.log( '数据加载中……');
+    //config.headers['Content-Type'] = 'application/x-www-form-urlencoded'
 
+
+		/*
     config.method === 'post'
         ? config.data = qs.stringify({...config.data})
-        : config.params = {...config.params};
+        : config.params = {...config.params};*/
+    if(config.method === 'patch')
+		{
+			config.headers['Content-Type'] = 'application/json;charset=UTF-8'
+		}
    // config.headers['Content-Type'] = 'application/json;charset=UTF-8';
     config.headers['Access-Control-Allow-Origin'] = '*';
-    console.log(JSON.stringify(config));
+   // console.log(JSON.stringify(config));
     return config;
 }, error => {  //请求错误处理
    console.log('warning')

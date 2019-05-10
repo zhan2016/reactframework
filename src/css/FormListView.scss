@@ -1,0 +1,39 @@
+.formlistContainer
+{
+  display: table;
+  width: 100%;
+  .formcontent
+  {
+    display: table-cell;
+    width: 85%;
+    .formInnerInfo
+    {
+      display: table;
+      width: 100%;
+      .formInnerInfopos
+      {
+        display: table-cell;
+        width: 10%;
+        text-align: left;
+      }
+      .formInnerInfoname
+      {
+        text-align: left;
+        width: 20%;
+        display: table-cell;
+      }
+      .formInnerdesc
+      {
+        text-align: left;
+        display: table-cell;
+      }
+    }
+  }
+  .formitemTool
+  {
+    display: table-cell;
+    text-align: right;
+    width: auto;
+    margin-left: auto;
+  }
+}

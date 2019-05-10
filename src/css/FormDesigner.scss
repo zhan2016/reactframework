@@ -1,0 +1,23 @@
+.formdesigntoolbarContainer
+{
+    display: table;
+  .formdesigntoolbarSelect
+  {
+    display: table-cell;
+    width: 10%;
+  }
+  .formdesigntoolbarFormBaseInfo
+  {
+    display: table-cell;
+    width: 80%;
+  }
+  .formdesigntoolbarFormSaveBtn
+  {
+    display: table-cell;
+  }
+}
+.formBuilderContainer
+{
+  display: flex;
+  flex-direction: row;
+}

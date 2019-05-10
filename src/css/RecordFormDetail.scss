@@ -1,0 +1,109 @@
+.baseContainer
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.recordformdetailcontent
+{
+  display: table;
+  width: 100%;
+}
+.recordformlefttab
+{
+  display: table-cell;
+  width:20%;
+  height: 100%;
+  overflow: visible;
+  .btngroup
+  {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e0e0e0;
+    height: 100%;
+    overflow: visible;
+    button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    button:hover {
+      background-color: #ddd;
+    }
+    button.currentselect {
+      background-color: #ccc;
+    }
+  }
+}
+
+.recordRightContent
+{
+  display: table-cell;
+  .formio-form .alert-sucess
+  {
+    display: none;
+  }
+}
+
+.recordformdetailToolBar
+{
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  position: relative;
+  .returntext
+  {
+    display: table-cell;
+  }
+}
+.patientInfo
+{
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 12px;
+  font-size: 13px;
+  text-align: left;
+  display: table;
+  margin-bottom: 8px;
+  .data-entry-progress
+  {
+    display: table;
+     width:100%;
+    .data-entry-progresscontent
+    {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+.navigatorbar
+{
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  font-weight: 700;
+  color: #fff;
+  font-size: 13px;
+  text-align: left;
+  margin-right: 4px;
+  max-height: 75vh;
+}

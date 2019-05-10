@@ -440,7 +440,8 @@ module.exports = function(webpackEnv) {
 										],
 									},
 								},
-								require.resolve('sass-loader')
+								require.resolve('sass-loader'),
+
 							],
 						},
             // Opt-in support for SASS (using .scss or .sass extensions).

@@ -1,15 +1,16 @@
 import React from 'react';
 import  {Button,FormControl,ListGroup} from 'react-bootstrap';
 import {observable} from 'mobx';
-import {inject, observer} from 'mobx-react'
+import {inject,Provider, observer} from 'mobx-react'
 import HeaderBar from './HeaderBar';
 import '../css/StudyViewLayout.scss';
 import StudyModal from "./StudyView/StudyModal";
 import {studyList, getStudyDetail, updateStudy, delStudy} from '../axios/StudyAPI';
 import  LO from 'lodash';
-import HashHistory from '../View/BrowserHistory'
+import HashHistory from '../View/BrowserHistory';
 
-@inject("AuthStore")
+
+@inject("AuthStore","CurrentVariable")
 @observer
 class  StudyViewLayout extends  React.Component{
 	@observable _newModalVisible = false;
@@ -77,7 +78,7 @@ class  StudyViewLayout extends  React.Component{
 									{
 										this.studylist.map(study=>{
 											return (
-												<ListGroup.Item action variant="light" onClick={()=>{HashHistory.push('/studydetail')}}>
+												<ListGroup.Item action variant="light" onClick={()=>{HashHistory.push('/studydetail'); this.props.CurrentVariable.setCurrentStudyId(study.study_id)}}>
 													<div className={'listcontainer'}>
 														<div className={"leftinfo"}>
 															{study.study_name}
